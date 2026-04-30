@@ -1,0 +1,15 @@
+# Configuration
+wp-config.php
+wp-config-sample.php
+
+# Environment artifacts
+.env
+local-config.php
+
+# WordPress Core & Dynamic Content
+/wp-admin/
+/wp-includes/
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+*.log

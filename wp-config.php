@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'local' );
 
 /** Database username */
-define( 'DB_USER', 'wordpress' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', '045ed0c2f52a2136fba6fcd302b3f4452421a671dd794ac4' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -89,9 +89,10 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define('WP_HOME', 'https://breezy-wordpress.duckdns.org');
-define('WP_SITEURL', 'https://breezy-wordpress.duckdns.org');
+// define('WP_HOME', 'https://breezy-wordpress.duckdns.org');
+// define('WP_SITEURL', 'https://breezy-wordpress.duckdns.org');
 
+define( 'WP_ENVIRONMENT_TYPE', 'local' );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

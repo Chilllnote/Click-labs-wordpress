@@ -164,3 +164,14 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 		}
 	}
 endif;
+
+// Adding a post type for us to use in graphQL
+add_action( 'init', function () {
+	register_post_type('toaster', [
+		'public' => true,
+		'label'  => 'Toasters',
+		'show_in_graphql' => true,
+		'graphql_single_name' => 'toaster',
+		'graphql_plural_name' => 'toasters',
+	]);
+});
