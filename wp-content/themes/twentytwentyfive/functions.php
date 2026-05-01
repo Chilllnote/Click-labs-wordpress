@@ -175,3 +175,14 @@ add_action( 'init', function () {
 		'graphql_plural_name' => 'toasters',
 	]);
 });
+
+// Adding a post type for us to use in graphQL
+add_action( 'init', function () {
+	register_post_type('Blog_post', [
+		'public' => true,
+		'label'  => 'Blog Posts',
+		'show_in_graphql' => true,
+		'graphql_single_name' => 'blogPost',
+		'graphql_plural_name' => 'blogPosts',
+	]);
+});
